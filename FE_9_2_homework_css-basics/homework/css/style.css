@@ -1,0 +1,154 @@
+
+	@media print {
+.pad h2 {
+	
+	color: blue
+}
+
+.tm-sidebar, 
+#contact, 
+#ideas, 
+.blocks, 
+.heading, 
+#about, 
+.img-fluid{
+
+display: none;
+
+}
+.tm-banner{
+	height: 150px;
+	padding: 0 0 0 0;
+}
+.tm-main-content{
+	padding-left: 0;
+	margin-left: 0; 
+
+
+}
+.flex-item{
+	padding: 0 0 0 0;
+	margin: 15px 15px 15px 15px;
+
+}
+.flex-2-col{
+	display:block;
+}
+.flex-item img {
+	    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+}
+@media only screen {
+
+	h2+p {
+    font-style: italic;
+}
+
+
+p:first-letter {
+	font-size: 30px;
+	
+}
+ p.tm-section-description:first-letter  {
+ 	color: #76cdd7;
+ }
+
+.tm-sidebar, .tm-content-box {
+       box-shadow: -2px 1px 15px 3px grey;
+}
+
+.tm-section-description{
+	text-indent: 1.5em;
+}
+.heading .pad h2 {
+	color: #76cdd7;
+	text-align: center;
+}
+
+.pad a {
+	color: black
+}
+.pad a:visited{
+	color: grey;
+}
+.pad a:hover{
+	text-decoration: underline double;
+	color:  #76cdd7;
+	
+}
+
+  a.text::after{
+content: "New";
+color: red;
+vertical-align: text-top;
+font-size: 0.6em
+}
+
+li.box:nth-child(even) {
+	background: #f2f2f2;
+}
+
+li.tm-nav-item {
+	border-bottom: 2px dotted silver;
+}
+li.tm-nav-item:last-child {
+	border-bottom: none;
+}
+.contact-form input{
+	color: red;
+}
+.contact-form textarea{
+	color: red;
+}
+.submit-btn{
+	color: red;
+}
+.submit-btn:hover{
+	color: white;
+	background: #17a2b8;
+}
+
+.mandatory-field:after {
+  content: "*";
+  position: absolute;
+  right: 5px;
+  top: +3px;
+  color: red;
+  
+}
+
+.tm-main-content section:nth-child(2)::before,
+.tm-main-content section:nth-child(3)::before,
+.tm-main-content section:nth-child(5)::before{
+content: '';
+width: 0;
+height: 0;
+border-top: 20px solid #5ce;
+border-right: 100px solid transparent;
+}
+.flex-2-col:nth-child(2){
+	display: none;
+}
+
+.thumbnail{
+	border-radius: 50%;
+}
+
+.tm-box-bg-title:hover{
+	background: #5ce;
+	color: white;
+	font-weight: bold;
+}
+#ideas h2:first-child{
+	color: gainsboro;
+	word-spacing: 5px;
+}
+
+}
