@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+}
+
+.main-wrapper {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0;
+  background: $contentBackground;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+
+  .logo {
+    img {
+      height: 200px;
+    }
+  }
+
+  nav {
+    margin: 124px 2% 0;
+    padding: 25px 17px 8px 15px;
+    border-top: 1.5px solid $navBorder;
+    border-bottom: 1.5px solid $navBorder;
+
+    a {
+      margin: 0 auto;
+      padding: 0 66px;
+      color: $linkColor;
+      text-transform: uppercase;
+      text-decoration: none;
+
+      &:hover {
+        color: darken($linkColor, 10%);
+        text-shadow: 1px 0 #8fc3b4;
+      }
+    }
+  }
+}
+
+.toolbar {
+  margin: 0 2%;
+  padding: 65px 0 30px;
+
+  input {
+    background-color: $contentBackground;
+    border: 1px solid $toolbarInputBorder;
+    border-radius: 1px;
+    float: right;
+    padding: 10px 20px 10px 0;
+  }
+
+  input::placeholder {
+    color: $toolbarInputPlaceholder;
+    padding-left: 15px;
+    font-size: 15px;
+  }
+}
+
+.post-list {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article {
+  margin: 2% 2% 0;
+  padding: 1%;
+  background: $articleBackground;
+  max-width: 44%;
+
+  .post-description {
+    color: $postDescriptionColor;
+    border-bottom: 1px solid $postDescriptioBorder;
+    padding-bottom: 10px;
+    font-size: 13px;
+  }
+
+  h3 {
+    color: $postDescriptionHTagColor;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  p {
+    color: $postDescriptionPTagColor;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+section {
+  &#about {
+    margin: 2% 2% 0;
+    padding: 1%;
+  }
+
+  h1 {
+    color: $sectionHTagColor;
+    text-align: right;
+    margin: 0;
+  }
+
+  h4 {
+    color: $sectionHTagColor;
+    text-align: right;
+    margin: 0;
+  }
+
+  p {
+    color: $sectionPTagColor;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  &#contact {
+    margin: 4% 1% 0;
+    padding: 1%;
+  }
+}
+
+.form-group {
+  margin: 15px 10px 15px 0;
+
+  input {
+    border: 1.5px solid darken($contentBackground, 15%);
+    padding: 10px 10px 10px 0;
+    width: 100%;
+    background-color: $contentBackground;
+
+    &::placeholder {
+      padding-left: 15px;
+      font-size: 15px;
+    }
+  }
+
+  textarea {
+    border: 1.5px solid darken($contentBackground, 15%);
+    background-color: $contentBackground;
+    padding-left: 15px;
+    width: 100%;
+    padding: 10px 10px 10px 0;
+
+    &::placeholder {
+      padding-left: 15px;
+      font-size: 15px;
+    }
+  }
+}
+
+.btn {
+  border: none;
+  background: $btnBackground;
+  padding: 10px 65px;
+  font-size: 14px;
+  float: right;
+  color: $btnColor;
+}
+
+.btn:hover {
+  background: darken($btnBackground, 10%);
+}
+
+footer {
+  margin: 2% 2% 0;
+  padding: 1%;
+  color: $footerColor;
+}

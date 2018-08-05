@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Lora");
+body {
+  font-family: 'Lora', serif; }
+
+body {
+  margin: 0; }
+
+.main-wrapper {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0;
+  background: #efefef;
+  display: flex;
+  flex-direction: column; }
+
+header {
+  display: flex; }
+  header .logo img {
+    height: 200px; }
+  header nav {
+    margin: 124px 2% 0;
+    padding: 25px 17px 8px 15px;
+    border-top: 1.5px solid #cfd8dc;
+    border-bottom: 1.5px solid #cfd8dc; }
+    header nav a {
+      margin: 0 auto;
+      padding: 0 66px;
+      color: #fc5830;
+      text-transform: uppercase;
+      text-decoration: none; }
+      header nav a:hover {
+        color: #f53304;
+        text-shadow: 1px 0 #8fc3b4; }
+
+.toolbar {
+  margin: 0 2%;
+  padding: 65px 0 30px; }
+  .toolbar input {
+    background-color: #efefef;
+    border: 1px solid #fc5830;
+    border-radius: 1px;
+    float: right;
+    padding: 10px 20px 10px 0; }
+  .toolbar input::placeholder {
+    color: #fc5830;
+    padding-left: 15px;
+    font-size: 15px; }
+
+.post-list {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap; }
+
+article {
+  margin: 2% 2% 0;
+  padding: 1%;
+  background: #fff;
+  max-width: 44%; }
+  article .post-description {
+    color: #bdbdbd;
+    border-bottom: 1px solid #cfd8dc;
+    padding-bottom: 10px;
+    font-size: 13px; }
+  article h3 {
+    color: #617d8a;
+    text-transform: uppercase;
+    font-weight: bold; }
+  article p {
+    color: #bc9379; }
+  article img {
+    max-width: 100%; }
+
+section#about {
+  margin: 2% 2% 0;
+  padding: 1%; }
+section h1 {
+  color: #fc5830;
+  text-align: right;
+  margin: 0; }
+section h4 {
+  color: #fc5830;
+  text-align: right;
+  margin: 0; }
+section p {
+  color: #757575; }
+section img {
+  max-width: 100%; }
+section#contact {
+  margin: 4% 1% 0;
+  padding: 1%; }
+
+.form-group {
+  margin: 15px 10px 15px 0; }
+  .form-group input {
+    border: 1.5px solid #c9c9c9;
+    padding: 10px 10px 10px 0;
+    width: 100%;
+    background-color: #efefef; }
+    .form-group input::placeholder {
+      padding-left: 15px;
+      font-size: 15px; }
+  .form-group textarea {
+    border: 1.5px solid #c9c9c9;
+    background-color: #efefef;
+    padding-left: 15px;
+    width: 100%;
+    padding: 10px 10px 10px 0; }
+    .form-group textarea::placeholder {
+      padding-left: 15px;
+      font-size: 15px; }
+
+.btn {
+  border: none;
+  background: #fc5830;
+  padding: 10px 65px;
+  font-size: 14px;
+  float: right;
+  color: #fff; }
+
+.btn:hover {
+  background: #f53304; }
+
+footer {
+  margin: 2% 2% 0;
+  padding: 1%;
+  color: #757575; }
