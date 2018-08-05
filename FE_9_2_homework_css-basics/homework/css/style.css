@@ -1,16 +1,16 @@
 
 	@media print {
 .pad h2 {
-	
+
 	color: blue
 }
 
-.tm-sidebar, 
-#contact, 
-#ideas, 
-.blocks, 
-.heading, 
-#about, 
+.tm-sidebar,
+#contact,
+#ideas,
+.blocks,
+.heading,
+#about,
 .img-fluid{
 
 display: none;
@@ -22,7 +22,7 @@ display: none;
 }
 .tm-main-content{
 	padding-left: 0;
-	margin-left: 0; 
+	margin-left: 0;
 
 
 }
@@ -47,6 +47,7 @@ display: none;
 }
 @media only screen {
 
+
 	h2+p {
     font-style: italic;
 }
@@ -54,7 +55,7 @@ display: none;
 
 p:first-letter {
 	font-size: 30px;
-	
+
 }
  p.tm-section-description:first-letter  {
  	color: #76cdd7;
@@ -81,7 +82,7 @@ p:first-letter {
 .pad a:hover{
 	text-decoration: underline double;
 	color:  #76cdd7;
-	
+
 }
 
   a.text::after{
@@ -121,12 +122,17 @@ li.tm-nav-item:last-child {
   right: 5px;
   top: +3px;
   color: red;
-  
+
 }
 
-.tm-main-content section:nth-child(2)::before,
-.tm-main-content section:nth-child(3)::before,
-.tm-main-content section:nth-child(5)::before{
+
+#home::before,
+ section:nth-child(1)::before,
+ section:nth-child(2)::before,
+ section:nth-child(3)::before,
+ section:nth-child(5)::before{
+
+position: absolute;
 content: '';
 width: 0;
 height: 0;
