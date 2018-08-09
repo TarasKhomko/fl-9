@@ -127,8 +127,10 @@ li.tm-nav-item:last-child {
 
 
 #home::before,
+
  section:nth-child(1)::before,
  section:nth-child(2)::before,
+
  section:nth-child(3)::before,
  section:nth-child(5)::before{
 
