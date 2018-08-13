@@ -5,6 +5,7 @@
 
 *{
   margin: 0;
+  padding: 0;
 }
   #myBtn{
     display: none;
@@ -16,16 +17,16 @@ body {
 
 .main-wrapper {
 
-
   flex-direction:column;
+
 }
 
 .app {
-
-  margin:  0 10% 0 10%;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
   display: flex;
-
-   justify-content: center;
+  justify-content: center;
 }
 
 .flex {
@@ -53,7 +54,7 @@ body {
 }
 
 .nav-top {
-    padding: 25px 0 0 0;
+  padding-top:  15px;
   justify-content: flex-end;
 }
 
@@ -100,7 +101,7 @@ box-sizing: border-box;
 }
 
 .body-article {
-    box-sizing: border-box;
+  box-sizing: border-box;
   color: #5d5d5d;
   text-align: justify;
   text-indent: 50px;
@@ -118,16 +119,8 @@ box-sizing: border-box;
 
 
 
-@media only screen and (max-width: 991px) and (min-width: 576px) {
-  .app{
-    margin: 0;
-  }
-  .main-wrapper {
-    background: #0a1223;
-    margin: 0 auto;
-    max-width: 991px;
-    min-width: 576px;
-  }
+@media (max-width: 991px) and (min-width: 576px) {
+
 
   .flex ,.moon:nth-child(odd){
     flex-direction:column;
@@ -153,20 +146,12 @@ box-sizing: border-box;
 }
 
 @media  (max-width: 575px) {
-  .app{
-    margin: 0;
-  }
+
   body{
     background: #fff;
   }
-  .main-wrapper {
 
-    min-width: 100% ;
-    margin: 0 auto;
-  }
- ul {
-    padding: 0;
-  }
+
   h1 {
     color: #000;
     font-size: 15vw ;
