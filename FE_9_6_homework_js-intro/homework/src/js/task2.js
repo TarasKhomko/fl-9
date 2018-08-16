@@ -3,8 +3,6 @@ let b = prompt( 'Enter length b');
 let angle = prompt( 'Enter angle');
 a = Math.trunc(parseFloat(a) * 100) / 100;
 b = Math.trunc(parseFloat(b) * 100) / 100;
-console.log(a);
-
 angle = parseFloat(angle);
 let deg = 180;
 let g = 0.5;
