@@ -1,5 +1,5 @@
-let price = prompt( 'Enter price');
-let discount = prompt( 'Enter discount');
+let price = prompt( 'Enter price', '0');
+let discount = prompt( 'Enter discount','0');
 price = Math.trunc(parseFloat(price) * 100) / 100;
 discount = Math.trunc(parseFloat(discount) * 100) / 100;
 

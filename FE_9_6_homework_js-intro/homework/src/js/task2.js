@@ -1,6 +1,6 @@
-let a = prompt( 'Enter length a');
-let b = prompt( 'Enter length b');
-let angle = prompt( 'Enter angle');
+let a = prompt( 'Enter length a','0');
+let b = prompt( 'Enter length b', '0');
+let angle = prompt( 'Enter angle','0');
 a = Math.trunc(parseFloat(a) * 100) / 100;
 b = Math.trunc(parseFloat(b) * 100) / 100;
 angle = parseFloat(angle);
