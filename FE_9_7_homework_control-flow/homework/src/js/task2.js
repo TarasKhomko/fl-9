@@ -16,7 +16,7 @@ function millioner() {
       'Attmpts left:  ' + parseInt(4 - m) +
       '\nTotal prize:' + total + '$' +
       '\nPossible prize on current attempt: ' + parseInt(prize) + '$');
-   
+   console.log(parseInt(userNumber) +"="+ parseInt(number))
     if (parseInt(userNumber) === parseInt(number)) {
       if (confirm('Congratulation!   Your prize is: ' + parseInt(prize + total) + '$ Do you want to continue?')) {
         prizeMax *= 3;
