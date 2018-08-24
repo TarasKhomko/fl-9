@@ -34,14 +34,12 @@ function filter(arr, func) {
 }
 //5
 function getAdultAppleLovers(data) {
-  let arrN = [];
-  for (let i = 0; i < data.length; i++) {
-    let el = data[i];
-    if (data[i].age > 18 && data[i].favoriteFruit === 'apple') {
-      arrN.push(el.name);
-    }
-  }
-  return arrN;
+  let obj = filter(data, function(data) {
+    return data.age > 18 && data.favoriteFruit === 'apple'
+  });
+
+return map(obj, obj => obj.name);
+
 }
 //6
 function keys(obj){
