@@ -1,8 +1,7 @@
 
 //1.
-function findType() {
-  let input = 0;
-  let output = typeof arguments[input]
+function findType(input) {
+  let output = typeof input;
   return output;
 }
 //2
@@ -44,8 +43,7 @@ return map(obj, obj => obj.name);
 //6
 function keys(obj){
     let arrN = [];
-    let el = null;
-    for(el in obj){
+    for(let el in obj){
           if ({}.hasOwnProperty.call(obj, el)) {
         arrN.push(el);
       }
@@ -64,12 +62,11 @@ function values(obj){
   return arrN;
 }
 //8
-function showFormattedDate() {
+function showFormattedDate(data) {
   let month = 1;
   let number = 2;
-  let year = 3
-  let input = 0;
-  let data = String(arguments[input]).split(' ');
-  let output = `It is ${data[number]} of ${data[month]}, ${data[year]}`;
+  let year = 3;
+  let dataN = String(data).split(' ');
+  let output = `It is ${dataN[number]} of ${dataN[month]}, ${dataN[year]}`;
   return output;
 }
