@@ -10,23 +10,19 @@
   <div id="root">
   	<header>
   		<h1 class="title">TODO Cat List</h1>
+      <p id="text-limit" >Maximum item per list are created</p>
   	</header>
-	<section>
-		<input type="" id="input-text" name="text">
-		<button id="btn" onclick=add_icon()><i class="material-icons">add_box</i></button>
+	<div>
+		<input type="text" id="input-text" name="text" placeholder="Add New Action">
+		<button id="btn" onclick=addContent()><i class="material-icons">add_box</i></button>
 		<hr>
 	<ul id="item-icon">
-		
-	</ul>	
-
-	</section>
-	<footer>
+	</ul>
+</div>
+	<footer class="footer-cl">
 		<img class="fot-img" src="./assets/img/cat.png" alt="cat">
 	</footer>
   </div>
-
-
-
   <script src="./src/app.js"></script>
 </body>
 </html>

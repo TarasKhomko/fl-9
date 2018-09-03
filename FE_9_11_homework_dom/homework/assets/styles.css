@@ -5,9 +5,10 @@ button{
 	background: #fff;
 }
 #root{
-	width: 800px;
+	width: 600px;
 	margin: 0 auto;
 	border: solid 1px black;
+		padding: 10px ;
 }
 #btn{
 
@@ -15,18 +16,39 @@ button{
 .title{
 	text-align: center;
 }
+#text-limit{
+	text-align: center;
+	display: none;
+}
 .fot-img{
+	margin-left: auto;
+	margin-right: auto;
 
 	width: 50px;
 }
-.item-li{
+#input-text{
+	width: 84.8%;
+}
+.footer-cl{
+	margin: 10px;
 	display: flex;
-
-	 position: relative;
-
+	justify-content: center;
+	align-items: flex-end;
 }
 
+#item-icon{
+
+}
+.item-li{
+	line-height: 23px;
+list-style-type: none;
+position: relative;
+}
+.btn_done{
+	position: absolute;
+}
 .btn-delete{
 	position: absolute;
     right: 0;
+
 }
