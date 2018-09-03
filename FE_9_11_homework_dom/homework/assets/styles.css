@@ -1,0 +1,32 @@
+button{
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	background: #fff;
+}
+#root{
+	width: 800px;
+	margin: 0 auto;
+	border: solid 1px black;
+}
+#btn{
+
+}
+.title{
+	text-align: center;
+}
+.fot-img{
+
+	width: 50px;
+}
+.item-li{
+	display: flex;
+
+	 position: relative;
+
+}
+
+.btn-delete{
+	position: absolute;
+    right: 0;
+}
