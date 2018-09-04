@@ -59,6 +59,7 @@ bottom: 0px;
 
 .item-li{
   margin: 5px;
+  overflow:hidden;
 	line-height: 24px;
 	list-style-type: none;
 	position: relative;
