@@ -1,3 +1,11 @@
+@font-face {
+  src: url("https://fonts.googleapis.com/css?family=Open+Sans");
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+ 
+}
 button{
 	padding: 0px;
 	margin: 0px;
@@ -10,8 +18,16 @@ button{
 	border: solid 1px black;
 		padding: 10px ;
 }
-#btn{
 
+
+.form-control{
+	  position: relative;
+  width: 100%;
+  display: inline-flex;
+  height: 24px;
+}
+#btn{
+	margin-left: 5px;
 }
 .title{
 	text-align: center;
@@ -36,13 +52,12 @@ button{
 	align-items: flex-end;
 }
 
-#item-icon{
-
-}
 .item-li{
-	line-height: 23px;
-list-style-type: none;
-position: relative;
+	line-height: 24px;
+	list-style-type: none;
+	position: relative;
+	height: 24px;
+	display: flex;
 }
 .btn_done{
 	position: absolute;
