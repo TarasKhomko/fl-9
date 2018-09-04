@@ -7,7 +7,7 @@ document.getElementById('input-text').onkeyup = function() {
   btnActive();
 }
 function btnActive() {
-  if (!document.getElementById('input-text').value) {
+  if (document.getElementById('input-text').value.trim().length===zero) {
     document.getElementById('btn').disabled = true;
   } else {
     document.getElementById('btn').disabled = false;
@@ -29,10 +29,10 @@ function addContent() {
   li.appendChild(t);
   li.appendChild(btn_delete);
   btn_done.onclick = event => {
- btn_done.innerHTML = '<i class="material-icons">check_box</i>' 
+ btn_done.innerHTML = '<i class="material-icons">check_box</i>'
 };
   btn_delete.onclick = event => {
- parent.removeChild(li); 
+ parent.removeChild(li);
   document.getElementById('input-text').disabled = false;
     };
   if (text.length > zero && parent.getElementsByTagName('li').length <= max - one) {
