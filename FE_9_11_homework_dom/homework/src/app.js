@@ -32,12 +32,14 @@ function addContent() {
  btn_done.innerHTML = '<i class="material-icons">check_box</i>'
 };
   btn_delete.onclick = event => {
- parent.removeChild(li);
+  parent.removeChild(li);
   document.getElementById('input-text').disabled = false;
+  document.getElementById('text-limit').style.display = 'none';
     };
   if (text.length > zero && parent.getElementsByTagName('li').length <= max - one) {
     document.getElementById('input-text').value = '';
     document.getElementById('btn').disabled = true;
+
   } else if(parent.getElementsByTagName('li').length === max) {
     document.getElementById('input-text').value = '';
     document.getElementById('btn').disabled = true;
